@@ -19,3 +19,8 @@ It will create virtual enviroment in your local files. In this process all libra
 ```shell
 pipenv shell
 ```
+5. Install Playwright in your env:
+```shell
+playwright install
+```
+It will download all necessary drivers for browsers.
