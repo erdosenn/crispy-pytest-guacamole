@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+faker = "*"
+isort = "*"
+playwright = "*"
+pylama = "*"
+pytest = "*"
+pytest-dotenv = {extras = ["cli"], version = "*"}
+pytest-playwright = "*"
+python-dotenv = {extras = ["cli"], version = "*"}
+toml = "*"
+yapf = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
