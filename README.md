@@ -1,5 +1,5 @@
 # crispy-pytest-guacamole
-Frontend tests wrote in Python with pytest and Playwright for [test ecommerce website](automationpractice.com/index.php).
+Frontend tests written in Python with Pytest and Playwright for [test ecommerce website](automationpractice.com/index.php).
 
 # Intro
 Tests were written using Python 3.8, Playwright, keeping the POM. I used the Pytest runner.
