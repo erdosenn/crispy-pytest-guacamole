@@ -1,0 +1,19 @@
+[tool.yapf]
+column_limit = 120
+each_dict_entry_on_separate_line = true
+spaces_before_comment = "15,20"
+i18n_function_call = true
+dedent_closing_brackets = true
+split_penalty_import_names = 350
+blank_line_before_nested_class_or_def = true
+blank_lines_around_top_level_definition = 2
+
+[tool.yapfignore]
+ignore_patterns = [
+    ".venv",
+    "data",
+    "var",
+]
+
+[tool.isort]
+overwrite_in_place = true
