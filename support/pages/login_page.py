@@ -1,6 +1,8 @@
 """
 Login page.
 """
+import os
+
 from playwright.sync_api import Page
 from support.modules.web_driver import WebDriver
 
@@ -27,7 +29,8 @@ class LoginPage(WebDriver):
     """methods"""
 
     def __init__(self, page: Page):
-        super().__init__(page, self.path)
+        super().__init__(page)
+        self.url = os.getenv("BASE_URL") + self.path
 
     def enter_login(self, login):
         """

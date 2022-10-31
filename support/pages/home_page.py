@@ -1,6 +1,8 @@
 """
 Home page.
 """
+import os
+
 from playwright.sync_api import Page
 
 from support.modules.web_driver import WebDriver
@@ -26,7 +28,8 @@ class HomePage(WebDriver):
     """methods"""
 
     def __init__(self, page: Page):
-        super().__init__(page, self.path)
+        super().__init__(page)
+        self.url = os.getenv("BASE_URL") + self.path
 
     @staticmethod
     def _btn_media_locator(social_media_name: str) -> str:
