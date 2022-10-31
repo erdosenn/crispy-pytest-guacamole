@@ -8,9 +8,8 @@ class WebDriver:
     url = os.getenv("BASE_URL")
 
     @classmethod
-    def __init__(cls, page: Page, path: str):
+    def __init__(cls, page: Page):
         cls.page = page
-        cls.url = os.getenv("BASE_URL") + path
 
     def go_to_page(self):
         """
